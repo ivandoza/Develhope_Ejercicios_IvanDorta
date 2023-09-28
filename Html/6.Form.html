@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>6.Form</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+  
+    <h1>User Information</h1>
+      <form>
+        <label for="email">Email:</label>
+          <input type="text" name="email" placeholder="example@email.com">
+        <label for="password">Password:</label>
+          <input type="text" name="password">
+        <label for="first_name">First Name:</label>
+          <input type="text" name="first_name">
+        <label for="last_name">Last Name:</label>
+          <input type="text" name="last_name">
+        <label for="date">Birth date:</label>
+          <input type="text" name="date" placeholder="dd/mm/yyyy">
+        <label for="phone_number">Phone Number:</label>
+          <input type="text" name="phone_number" placeholder="+34 600 000 000">
+      <br>
+    <h2>Choose a Plan</h2>
+      <table>
+        <tr>
+          <td><input type="radio" id="free_plan" name="select_plan" value="free plan"></td>
+          <td> <label for="free_plan">Free Plan</label></td>
+        </tr>
+          <tr>
+          <td><input type="radio" id="first_plan" name="select_plan" value="4.99$ plan"></td>
+          <td><label for="first_plan">4.99$</label></td>
+          </tr>
+        <tr>
+          <td><input type="radio" id="second_plan" name="select_plan" value="9.99$ plan"></td>
+          <td><label for="second_plan">9.99$</label></td>
+          </tr>
+        <tr>
+          <td><input type="radio" id="third_plan" name="select_plan" value="14.99$ plan"></td>
+          <td><label for="third_plan">14.99$</label></td>
+          </tr>
+        <tr>
+          <td><input type="radio" id="fourth_plan" name="select_plan" value="29.99$ plan"></td>
+          <td><label for="fourth_plan">29.99$</label></td>
+          </tr>
+        <tr>
+          <td><input type="checkbox" name="pro_plan" value="pro plan"></td>
+          <td><label for="pro_plan"><strong>Pro Plan</strong></label></td>
+        </tr>
+      </table>
+        <br>
+    <h3>Payment Information</h3>    
+        <label for="credit_card">Credit Card Number:</label>
+          <input type="text" name="credit_card" placeholder="0123 4567 8901 2345">
+        <label for="cvc">CVC:</label>
+          <input type="text" name="cvc" placeholder="123">
+        <label for="exp_date">Expiration date:</label>
+          <input type="text" name="exp_date" placeholder="mm/yy">
+        <label for="billing_address">Billing Address:</label>
+          <input type="text" name="billing_address" placeholder="">
+    <br>
+    <br>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
